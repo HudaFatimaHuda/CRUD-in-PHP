@@ -6,9 +6,13 @@ This PHP project is an example of a simple CRUD (Create, Read, Update, Delete) a
 ## Features
 
 **CRUD Operations:** Perform Create, Read, Update, and Delete operations on a MySQL database.
+
 **User Authentication:** Secure login and signup features for user authentication.
+
 **Form Validation:** Handle form errors and provide feedback to users.
+
 **AJAX Email Check:** Use AJAX to asynchronously check if an email is already registered during signup.
+
 
 
 ## Database Schema
