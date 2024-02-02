@@ -20,20 +20,17 @@ This PHP project is an example of a simple CRUD (Create, Read, Update, Delete) a
 ### `data` Table
 
 CREATE TABLE IF NOT EXISTS data (
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     
     name VARCHAR(255) NOT NULL,
     
     score INT NOT NULL
-    
 );
 
 
 ### `login` Table
 
 CREATE TABLE IF NOT EXISTS login (
-
     id INT AUTO_INCREMENT PRIMARY KEY,
     
     email VARCHAR(255) NOT NULL,
@@ -43,7 +40,6 @@ CREATE TABLE IF NOT EXISTS login (
     password VARCHAR(255) NOT NULL,
     
     mobile VARCHAR(20)
-    
 );
 
 
@@ -62,6 +58,10 @@ private $database = 'your-database-name';
 
 
 ## Usage
+
 Visit index.php to perform CRUD operations.
+
 Access login_form.php for user login.
+
 Navigate to signup_form.php to create a new account.
+
