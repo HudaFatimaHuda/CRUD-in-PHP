@@ -18,27 +18,47 @@ This PHP project is an example of a simple CRUD (Create, Read, Update, Delete) a
 ## Database Schema
 
 ### `data` Table
+
 CREATE TABLE IF NOT EXISTS data (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     name VARCHAR(255) NOT NULL,
+    
     score INT NOT NULL
+    
 );
+
 
 ### `login` Table
+
 CREATE TABLE IF NOT EXISTS login (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
+    
     email VARCHAR(255) NOT NULL,
+    
     name VARCHAR(255) NOT NULL,
+    
     password VARCHAR(255) NOT NULL,
+    
     mobile VARCHAR(20)
+    
 );
 
+
 ### Configure the database connection in db.php:
+
 // db.php
+
 private $hostname = 'your-database-hostname';
+
 private $username = 'your-database-username';
+
 private $password = 'your-database-password';
+
 private $database = 'your-database-name';
+
 
 
 ## Usage
