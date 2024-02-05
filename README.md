@@ -11,7 +11,7 @@ This PHP project is an example of a simple CRUD (Create, Read, Update, Delete) a
 
 **Form Validation:** Handle form errors and provide feedback to users.
 
-**AJAX Email Check:** Use AJAX to asynchronously check if an email is already registered during signup.
+**AJAX Email Check:** Use AJAX to asynchronously check if an email is already registered during signup and for form validaion.
 
 
 
@@ -20,17 +20,23 @@ This PHP project is an example of a simple CRUD (Create, Read, Update, Delete) a
 ### `data` Table
 
 CREATE TABLE IF NOT EXISTS data (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
     
     name VARCHAR(255) NOT NULL,
     
-    score INT NOT NULL
+    score INT NOT NULL,
+
+    user_id INT,
+    
+    FOREIGN KEY (user_id) REFERENCES login(id)
 );
 
 
 ### `login` Table
 
 CREATE TABLE IF NOT EXISTS login (
+
     id INT AUTO_INCREMENT PRIMARY KEY,
     
     email VARCHAR(255) NOT NULL,
